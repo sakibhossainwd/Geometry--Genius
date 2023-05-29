@@ -108,7 +108,10 @@ button:hover{
     font-weight: 600;
     align-items: center;
 }
-.d-none{
+.triangle-none{
+    display: none;
+}
+.rectangle-none{
     display: none;
 }
 .list-button{
