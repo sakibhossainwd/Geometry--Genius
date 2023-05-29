@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Geometry Genius</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="interactive-container">
+            <div class="heading">
+                <h1>Interactive</h1>
+                <h3>Geometry Genius</h3>
+            </div>
+            <div class="blog-btn">
+                <button id="btn-blog" class="btn-blog">Blog</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="shape-box-container">
+            <div class="shape-container">
+                <div class="triangle box" onmouseover="randomColor(this)">
+                    <img src="images/triangle.png" alt="">
+                    <div class="content">
+                        <h2>Triangle</h2>
+                    <p>Area (A) = <samp id="triangle-pre-number">0.5</samp> * <samp id="triangle-b">b</samp> * <samp id="triangle-h">h</samp></p>
+                    <div class="input-area">
+                        <input id="triangle-left" type="number" placeholder="b">
+                        <p>cm</p>
+                        <input id="triangle-right" type="number" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button id="btn-triangle">Calculate</button>
+                    </div>
+                </div>
+                <div class="rectangle box" onmouseover="randomColor(this)">
+                    <img src="images/rectangle.png" alt="">
+                    <div class="content">
+                        <h2>Rectangle</h2>
+                    <p>Area (A) = <samp id="rectangle-w">w</samp> * <samp id="rectangle-l">I</samp></p>
+                    <div class="input-area">
+                        <input id="rectangle-left" type="text" placeholder="w">
+                        <p>cm</p>
+                        <input id="rectangle-right" type="text" placeholder="l">
+                        <p>cm</p>
+                    </div>
+                    <button id="btn-rectangle">Calculate</button>
+                    </div>
+                </div>
+                <div class="parallelogram box" onmouseover="randomColor(this)">
+                    <img src="images/parallelogram.png" alt="">
+                    <div class="content">
+                        <h2>Triangle</h2>
+                    <p>Area (A) = 0.5 * b * h</p>
+                    <div class="input-area">
+                        <input type="text" placeholder="b">
+                        <p>cm</p>
+                        <input type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button>Calculate</button>
+                    </div>
+                </div>
+                <div class="rhombus box">
+                    <img src="images/rhombus.png" alt="">
+                    <div class="content">
+                        <h2>Rhombus</h2>
+                    <p>Area (A) = 0.5 * d<sub>1</sub>* d<sub>2</sub></p>
+                    <div class="input-area">
+                        <input type="text" placeholder="b">
+                        <p>cm</p>
+                        <input type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button>Calculate</button>
+                    </div>
+                </div>
+                <div class="pentagon box">
+                    <img src="images/pentagon.png" alt="">
+                    <div class="content">
+                        <h2>Pentagon</h2>
+                    <p>Area (A) = 0.5 * p * b</p>
+                    <div class="input-area">
+                        <input type="text" placeholder="b">
+                        <p>cm</p>
+                        <input type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button>Calculate</button>
+                    </div>
+                </div>
+                <div class="ellipse box">
+                    <img src="images/ellipse.png" alt="">
+                    <div class="content">
+                        <h2>Ellipse</h2>
+                    <p>Area (A) = ab</p>
+                    <div class="input-area">
+                        <input type="text" placeholder="b">
+                        <p>cm</p>
+                        <input type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button>Calculate</button>
+                    </div>
+                </div>
+                <!-- <div class="area-container">
+                    <h2>Area Calculation</h2>
+                </div> -->
+            </div>
+        </section>
+        <section class="calculation-box-container">
+            <div class="area-container">
+                <h3 class="area-heading"><u>Area Calculation</u></h3>
+                <div class="list-area">
+                    <ol>
+                        <!-- Triangle part -->
+                        <li class="box-list">Triangle<samp>
+                            <samp id="triangle-result">00</samp>cm<sup>2</sup></samp>
+                            <button id="btn-convert" class="list-button">Covert to m<sup>2</sup></button></li>
+                            <!-- Ractangle part -->
+                        <li class="box-list">Ractangle<samp>
+                            <samp id="rectangle-result">00</samp>cm<sup>2</sup></samp>
+                            <button id="ractangle-convert" class="list-button">Covert to m<sup>2</sup></button></li>
+                    </ol>
+                </div>
+            </div>
+        </section>   
+    </main>
+
+    <!-- js files added -->
+    <script src="js/utilities.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        samp{
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h2>1. What is DOM and what is the purpose of DOM?</h2>
+    <p><samp>Ans:</samp>DOM stands for Document Object Model. In the world of web, all HTML webpages are referred to as documents. The Document Object Model represents each of these web pages in a tree-like structure to make it easier to access and manage the elements.</p>
+        <br>
+        <h2>2. How will you select HTML elements using DOM? Name the DOM methods.</h2>
+        <p><samp>Ans:</samp>To select HTML elements using the DOM, you can use various methods provided by the DOM API. Here are some commonly used methods for element selection:
+
+            getElementById(): This method allows you to select an element by its unique ID attribute. It returns the element with the specified ID. <br>
+            Example:
+            <samp>var element = document.getElementById("myElement");</samp>
+            <br>
+            getElementsByClassName(): This method returns a collection of elements that have a specific class name. <br>
+            Example:
+            <samp>var elements = document.getElementsByClassName("myClass");</samp>
+<br>
+            getElementsByTagName(): This method returns a collection of elements with a specific tag name. <br>
+            Example:
+            <samp>var elements = document.getElementsByTagName("div");</samp>
+<br>
+            querySelector(): This method returns the first element that matches a specified CSS selector. <br>
+            Example:
+            <samp>var element = document.querySelector("#myElement .myClass");</samp>
+<br>
+            querySelectorAll(): This method returns a collection of elements that match a specified CSS selector. <br>
+            Example:
+            <samp>var elements = document.querySelectorAll("a");</samp>
+<br>
+            These methods allow you to select elements based on their ID, class, tag name, or using more complex CSS selectors. Once you have selected an element or a collection of elements, you can manipulate them, access their properties, or attach event listeners to them using the DOM API.</p>
+            <br>
+            <h2>3. What is event bubble?</h2>
+            <p><samp>Ans:</samp>Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element</p>
+            <br>
+            <h2>4. What is a callback function and why will you use it?</h2>
+            <p><samp>Ans:</samp>A callback is a function that waits for another function to finish executing before executing itself. It gives us the ability to enforce an order of operations to our JavaScript code.
+                Functions are objects in JavaScript. Because of this, functions can take other functions as arguments, and functions can also be returned by other functions. When a function takes another function as an argument or returns a function as a result, that function is called a higher-order function. Any function that is passed as an argument is called a callback function.</p>
+</body>
+</html>
