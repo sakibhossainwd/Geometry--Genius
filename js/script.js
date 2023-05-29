@@ -9,14 +9,14 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const trianglePreviousNumber = getElementValueById('triangle-pre-number');
     // // get the left input number
     const triangleInputLeft = inputField('triangle-left');
-    // set the input value in previous number
-    addElement('triangle-b', triangleInputLeft);
     // // get the right input value 
     const triangleInputRight = inputField('triangle-right');
     if(triangleInputRight === '' || triangleInputLeft === ''){
         alert('please enter valid number');
         return ;
     }
+    // set the input value in previous number
+    addElement('triangle-b', triangleInputLeft);
     // set the input value in precious number
     addElement('triangle-h', triangleInputRight);
     // multipication lef and right input number
@@ -46,13 +46,12 @@ document.getElementById('btn-convert').addEventListener('click', function(){
 // Ractabgle part
 document.getElementById('btn-rectangle').addEventListener('click', function(){
     const rectangleInputLeft = inputField('rectangle-left');
-    addElement('rectangle-w', rectangleInputLeft);
     const rectangleInputRight = inputField('rectangle-right');
     if(rectangleInputLeft === '' || rectangleInputRight === ''){
         alert('please enter valid number');
         return
     }
-
+    addElement('rectangle-w', rectangleInputLeft);
     addElement('rectangle-l', rectangleInputRight);
     const multipleTotalArea = rectangleInputLeft * rectangleInputRight;
     setCalculationResul('rectangle-result', multipleTotalArea);
