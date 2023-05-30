@@ -25,9 +25,9 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     setCalculationResul('triangle-result', multipleTotalArea);
 
     // show are result
-    // const list = document.querySelector('.triangle-none')
-    // console.log(list);
-    // list.classList.remove("triangle-none");
+    const list = document.querySelector('.triangle-none')
+    console.log(list);
+    list.classList.remove("triangle-none");
     
 })
 
@@ -36,7 +36,7 @@ document.getElementById('btn-convert').addEventListener('click', function(){
     // alert
     const triangleResult = document.getElementById('triangle-result');
     const triangleResultText = triangleResult.innerText;
-    if(triangleResultText === '00'){
+    if(triangleResultText === '0'){
         alert('please input valid number');
         return;
     }
@@ -74,6 +74,14 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
 
 // ractangle calculation "convert to m2" button
 document.getElementById('ractangle-convert').addEventListener('click', function(){
+    // alert
+    const ractangleResult = document.getElementById('rectangle-result');
+    const ractangleResultText = ractangleResult.innerText;
+    if(ractangleResultText === '0'){
+        alert('please input valid number');
+        return;
+    }
+
     const rectangleInputLeft = inputField('rectangle-left');
     const rectangleInputRight = inputField('rectangle-right');
     const multipleTotalArea = rectangleInputLeft * rectangleInputRight;
